@@ -1,0 +1,137 @@
+/* CONTAINER */
+
+.mainContainer {
+    height: 100vh;
+    width: 100%;
+    overflow: auto;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+/* TEXT */
+
+.title {
+    padding: 1rem 0;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.paragraph {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: var(--dark-blue-shadow);
+    color: rgb(0, 0, 0);
+}
+
+.videoContainer {
+    padding: 1rem 0;
+}
+
+.videoContainer iframe {
+    display: block;
+    border: none;
+    height: auto;
+    width: 100%;
+    max-width: 775px;
+    min-height: 275px;
+    margin: 0 auto;
+}
+
+/* OWNERS */
+
+.ownersContainer {
+    padding-block: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ownerCard {
+    width: 200px;
+    height: 250px;
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: var(--dark-blue-shadow);
+    transition: all 100ms;
+}
+
+.ownerCardLink {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.ownerCard:hover {
+    transform: scale(1.05);
+}
+
+.ownerCardImageContainer {
+    width: 80px;
+    height: 80px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.ownerCardImage {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: 100%;
+}
+
+.ownerCardTitle {
+    font-size: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+.ownerCardTitle::before {
+    content: '';
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    border: 1px solid var(--light-orange);
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 640px) {
+    .paragraph {
+        font-size: 1.1rem;
+    }
+
+    .videoContainer {
+        padding: 1rem;
+    }
+
+    .videoContainer iframe {
+        min-height: 436px;
+    }
+
+    .title {
+        font-size: 1.7rem;
+    }
+
+    .ownerCardTitle {
+        font-size: 1.15rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .paragraph {
+        font-size: 1.2rem;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,9 @@
+.container {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    justify-content: stretch;
+    align-items: flex-start;
+    padding-top: 1rem;
+    overflow-y: auto;
+    height: 100%;
+}

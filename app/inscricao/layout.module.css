@@ -1,0 +1,20 @@
+.leyoutContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    justify-content: stretch;
+    align-items: stretch;
+    height: 100%;
+}
+
+.mainContainer {
+    padding: 0.5rem;
+    background-color: var(--light-blue);
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) {
+    .mainContainer {
+        padding: 1rem;
+    }
+}
