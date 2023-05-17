@@ -1,0 +1,63 @@
+.sectionBackwords {
+    display: grid;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.left {
+    justify-content: flex-start;
+}
+
+.center {
+    justify-content: center;
+}
+
+.right {
+    justify-content: flex-end;
+}
+
+.backwardsLink {
+    display: block;
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.backwardsIcon {
+    display: block;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+}
+
+.backwardsLink:hover .backwardsIcon {
+    animation: 0.8s ease-in infinite slide alternate;
+}
+
+@media screen and (min-width: 768px) {
+    .backwardsLink {
+        width: 72px;
+        height: 72px;
+    }
+
+    .center,
+    .right {
+        justify-content: flex-start;
+    }
+
+    .backwardsIcon {
+        font-size: 2.4rem;
+    }
+}
+
+@keyframes slide {
+    from {
+        right: 45%;
+    }
+  
+    to {
+        right: 55%;
+    }
+}

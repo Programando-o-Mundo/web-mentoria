@@ -1,0 +1,45 @@
+/* CONTAINER */
+
+.sectionSearchBar {
+    width: 100%;
+}
+
+/* FORM */
+
+.searchBarContainer {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.searchButton {
+    border: none;
+    outline: none;
+    border-radius: 10px 0 0 10px;
+    background-color: var(--green-blue);
+    padding: 0.5rem;
+    transition: all 200ms;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: var(--dark-blue);
+}
+
+.searchButton .icon {
+    display: block;
+    font-size: 2rem;
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 0px 10px 10px 0px;
+    padding: 0.5rem 1rem;
+    width: 100%;
+}
