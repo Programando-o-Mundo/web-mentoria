@@ -34,7 +34,6 @@
 }
 
 .channel {
-    width: 175px;
     background-color: var(--light-blue);
     border-radius: 10px;
     padding: 1rem;

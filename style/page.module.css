@@ -1,7 +1,6 @@
 .mainContainer {
     height: 100vh;
     display: grid;
-    justify-content: center;
     align-items: center;
 }
 
@@ -10,5 +9,5 @@
     grid-template-columns: 1fr;
     grid-template-rows: auto 1fr auto;
     gap: 1rem;
-    width: 550px;
+    width: 100%;
 }
