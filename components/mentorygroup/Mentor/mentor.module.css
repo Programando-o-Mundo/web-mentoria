@@ -1,0 +1,31 @@
+.container {
+    text-align: center;
+}
+
+.imageContainer {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid var(--dark-blue);
+    box-shadow: 0px 10px 2px var(--dark-blue-header-shadow);
+    margin: 0 auto;
+}
+
+.image {
+    display: block;
+    width: auto;
+    height: 100%;
+}
+
+.infoContainer {
+    margin-top: 1rem;
+}
+
+.mentorName {
+    font-size: 1.3rem;
+}
+
+.mentorGrade {
+    font-size: 1rem;
+}

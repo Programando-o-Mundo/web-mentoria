@@ -1,0 +1,47 @@
+.container {
+    display: grid;
+    align-items: center;
+}
+
+.buttonsContainer {
+    display: flex;
+    gap: 1rem;
+    padding-top: 1rem;
+}
+
+.button {
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    background-color: var(--green-blue);
+    color: white;
+    cursor: pointer;
+    transition: background-color 100ms;
+}
+
+.button:hover {
+    background-color: var(--dark-blue);
+}
+
+.descriptionContainer {
+    background-color: var(--dark-blue-shadow);
+    border-radius: 10px;
+    overflow: hidden;
+    padding-bottom: 1rem;
+}
+
+.descriptionContainer p {
+    padding: 1rem;
+}
+
+.descriptionContainer h3 {
+    text-align: center;
+    font-size: var(--idH3Title);
+    background-color: white;
+    padding: 1rem;
+}
