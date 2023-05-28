@@ -1,0 +1,10 @@
+.container {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.cardLink {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
