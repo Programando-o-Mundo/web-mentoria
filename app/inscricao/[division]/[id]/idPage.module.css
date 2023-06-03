@@ -1,10 +1,5 @@
 .container {
-    display: grid;
     height: 100%;
-    grid-template-columns: 1fr 1fr;
-    justify-content: stretch;
-    align-items: stretch;
-    gap: 2rem;
     --idH3Title: 1.3rem;
 }
 
@@ -73,4 +68,51 @@
     text-align: center;
     font-size: var(--idH3Title);
     padding: 1rem;
+}
+
+.reportCard {
+    width: 150px;
+    height: 200px;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--dark-blue-shadow);
+}
+
+.reportCard a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reportTitle span {
+    display: block;
+    line-height: 1em;
+}
+
+.reportDate {
+    font-size: 0.725rem;
+    font-style: italic;
+}
+
+.reportDescription {
+    font-size: 0.825rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .reportCard {
+        width: 175px;
+        height: 225px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 2rem;
+    }    
 }

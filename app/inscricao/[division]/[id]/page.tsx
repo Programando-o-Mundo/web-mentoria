@@ -50,10 +50,24 @@ export default function idPage() {
                     <h3>Relatórios Semanais</h3>
                     <HorizontalScroll>
                         { numbers.map((item) => <Card
-                                                key={item}
-                                                width='150px'
-                                                height='200px'
-                                                ></Card>
+                                                    key={item}
+                                                    className={styles.reportCard}
+                                                    color='white'
+                                                    link={`${'https://docs.google.com/document/d/1KhhjF4Y_Xhvji4xgfyOHxWBZQ-NK6E624eB0qIXqdTU/edit'}`}
+                                                >
+                                                    <h4 className={styles.reportTitle}>
+                                                        <span>Relatório</span>
+                                                        <time 
+                                                            dateTime={`${'yyyt'}-${'mm'}-${'dd'} 00:00`} 
+                                                            className={styles.reportDate}
+                                                        >
+                                                            dd/mm/yyyy
+                                                        </time>    
+                                                    </h4>
+                                                    <p className={styles.reportDescription}>
+                                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur aliquam error quo laborum exercitationem quam!
+                                                    </p>
+                                                </Card>
                         )}
                     </HorizontalScroll>
                 </div>

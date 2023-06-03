@@ -1,11 +1,19 @@
-import Image from 'next/image'
+'use client'
+
+import { FormEvent } from 'react';
 import styles from './form.module.css'
+
+const login = (event: FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const url = new URL('inscricao', window.location.href);
+    window.location.href = url.href;
+}
 
 export default function Form() {
     return (
         <section className={styles.formSection}>
             <div className={styles.formContainer}>
-                <form action='/api/login' method='post'>
+                <form action='' method='post' onSubmit={login}>
                     <legend className={styles.formTitle}>Login</legend>
                     <fieldset className={styles.formFieldset}>
                         <div className={styles.formField}>
