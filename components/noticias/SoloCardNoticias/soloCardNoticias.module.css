@@ -1,0 +1,73 @@
+.soloContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    margin-bottom: 1rem;
+    border: 1px solid black;
+    background-color: var(--green-blue);
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.soloInformationContainerOutsite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    height: 100%;
+    width: 100%;
+}
+
+.soloInformationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1rem;
+}
+
+.soloInformationContainer h3 {
+    border-bottom: 1px solid black;
+}
+
+.soloLink {
+    margin-bottom: 1rem;
+}
+
+.soloLink:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+/* .soloImage {
+    overflow-x: hidden;
+} */
+
+.soloImage img {
+    border-radius: 15px;
+    height: 100%;
+    max-width: 100%;
+}
+
+.soloDate {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .soloContainer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .soloImage {
+        width: 100%;
+        background-color: var(--dark-blue);
+        display: flex;
+        justify-content: center;
+    }
+}

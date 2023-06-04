@@ -30,9 +30,9 @@ export default function noticias() {
                 }()
             }
 
-            <section>
-                <div>
-                    <h2>Últimas notícias</h2>
+            <section className={styles.lastNewsSec}>
+                <div className={styles.lastNews}>
+                    <h2 className={styles.lastNewsTitle}>Últimas notícias</h2>
                 </div>
             {
                 latestNews.map((item) =>
@@ -43,19 +43,18 @@ export default function noticias() {
                         image={item.image}
                     />
                 )
-
             }
             </section>
             <section>
                 <div>
-                    <h2>Todas as Notícias</h2>
+                    <h2 className={styles.allNewsTitle}>Todas as Notícias</h2>
                 </div>
                 <HorizontalScroll>
                     {
                         news.map((item) =>
                             <CardNoticias
                                 title={item.title}
-                                date={item.date}
+                                date={item.date.toString()}
                                 description={item.description}
                             />
                         )
@@ -64,7 +63,7 @@ export default function noticias() {
                         latestNews.map((item) =>
                             <CardNoticias
                                 title={item.title}
-                                date={item.date}
+                                date={item.date.toString()}
                                 description={item.description}
                             />
                         )

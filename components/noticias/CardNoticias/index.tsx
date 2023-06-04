@@ -7,17 +7,17 @@ export default function noticias(props: {
     date: string,
 }) {
     return (
-        <section>
-            <Card link={`/inscricao/noticias/${props.title}`} height='200px' width='125px' color='var(--light-blue)'>
-                <div className={styles.cardContainer}>
+        <Card link={`/inscricao/noticias/${props.title}`} height='300px' width='200px' color='var(--green-blue)'>
+            <div className={styles.cardContainer}>
+                <div className={styles.cardInfoContainer}>
                     <div className={styles.cardTitleContainer}>
                         <h4 className={styles.cardTitle}>
                             {props.title}
                         </h4>
-                        <p className={styles.cardCampusName}>{props.description}</p>
                     </div>
+                    <p className={styles.cardDescp}>{props.description}</p>
                 </div>
-            </Card>
-        </section>
+            </div>
+        </Card>
     );
 }

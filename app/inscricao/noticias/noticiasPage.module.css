@@ -1,3 +1,31 @@
-.container {
-    
+.lastNewsSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lastNews {
+    margin-top: 3rem;
+}
+
+.lastNewsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: xx-large;
+}
+
+.allNewsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: xx-large;
 }
