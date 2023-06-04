@@ -27,7 +27,7 @@ export default function Navbar() {
                         <NavbarLink icon={<HiInformationCircle className={styles.navigationLinkIcon} />} text='Duvidas' link='/inscricao/duvidas'/>
                     </nav>
                     <div className={styles.userCard}>
-                        <Link className={styles.userCardLink} href='/inscricao'>
+                        <Link className={styles.userCardLink} href='/inscricao/perfil'>
                             <div className={styles.userImageContainer}>
                                 <Image
                                     className={styles.userImage}

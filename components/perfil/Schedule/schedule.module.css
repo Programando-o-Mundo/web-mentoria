@@ -1,0 +1,99 @@
+.container {
+    width: 100%;
+}
+
+.table {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+    border-collapse: collapse;
+    vertical-align: middle;
+    border-spacing: 0;
+}
+
+.table td,
+.table th {
+    padding: 0.5rem 1rem;
+}
+
+.tableBody,
+.tableBody tr {
+    position: relative;
+}
+
+.tableHead {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
+.tableBody {
+    width: 100%;
+    padding: 0 1rem 1rem 0;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--dark-blue-shadow);
+    transition: all 200ms;
+}
+
+.tableBody tr input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: black;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    cursor: pointer;
+}
+
+.tableButtonContainer.add,
+.tableButtonContainer.remove {
+    display: block;
+    position: absolute;
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 200ms;
+}
+
+.add {
+    transform: translate(-50%, 50%);
+    bottom: 0;
+    left: 50%;
+}
+
+.remove {
+    transform: translate(50%, -50%);
+    top: 50%;
+    right: -1rem;
+    transition: all 200ms;
+}
+
+.table.hidden .remove {
+    right: 0;
+}
+
+.table.hidden .tableBody {
+    padding: 0;
+}
+
+.table.hidden .tableButtonContainer {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.tableButton {
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 4px var(--dark-blue);
+}
+
+.buttonIcon {
+    display: block;
+    font-size: 1.2rem;
+}
