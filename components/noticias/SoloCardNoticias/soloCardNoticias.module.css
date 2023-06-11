@@ -5,8 +5,8 @@
     align-items: top;
     width: 100%;
     margin-bottom: 1rem;
-    border: 1px solid black;
-    background-color: var(--green-blue);
+    /* border: 1px solid black;
+    background-color: var(--green-blue); */
     border-radius: 15px;
     overflow: hidden;
     max-width: 1000px;
@@ -18,7 +18,6 @@
     justify-content: center;
     align-items: top;
     height: 100%;
-    width: 100%;
 }
 
 .soloInformationContainer {
@@ -42,14 +41,23 @@
     color: gray;
 }
 
-/* .soloImage {
-    overflow-x: hidden;
-} */
+.soloCardImg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.soloImage {
+    position: relative;
+    height: 100%;
+}
 
 .soloImage img {
     border-radius: 15px;
-    height: 100%;
-    max-width: 100%;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .soloDate {
@@ -60,14 +68,22 @@
 
 @media screen and (max-width: 768px) {
     .soloContainer {
+        padding-top: 15px;
         flex-direction: column-reverse;
         align-items: center;
+        border: 1px solid black;
     }
 
     .soloImage {
         width: 100%;
-        background-color: var(--dark-blue);
         display: flex;
         justify-content: center;
+    }
+
+    .soloImage img {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
     }
 }

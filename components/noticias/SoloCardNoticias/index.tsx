@@ -24,7 +24,9 @@ export default function noticias(props: {
                                     <p className={styles.soloDate}>{props.date.toString()}</p>
                                 </div>
                             </div>
-                            <div className={styles.soloImage}><img src={props.image} alt="image" /></div>
+                            <div className={styles.soloCardImg}>
+                                <div className={styles.soloImage}><img src={props.image} alt="image" /></div>
+                            </div>
                         </>
                     )
                 }()

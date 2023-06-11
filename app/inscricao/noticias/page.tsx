@@ -17,7 +17,7 @@ function generateNewsGroup(range: number, imgWidth: number, imgHeight: number) {
     })
 }
 
-const news = generateNewsGroup(13, 128, 128);
+const news = generateNewsGroup(12, 400, 400);
 const latestNews = generateNewsGroup(5, 400, 200);
 
 export default function noticias() {
@@ -25,7 +25,7 @@ export default function noticias() {
         <>
             {
                 function () {
-                    if (news.length > 3)
+                    if (news.length > 2)
                         return <MainArticles newsList={news}></MainArticles>
                 }()
             }
@@ -36,12 +36,15 @@ export default function noticias() {
                 </div>
             {
                 latestNews.map((item) =>
-                    <SoloCardNoticias
-                        title={item.title}
-                        date={item.date}
-                        description={item.description}
-                        image={item.image}
-                    />
+                    <>
+                        <SoloCardNoticias
+                            title={item.title}
+                            date={item.date}
+                            description={item.description}
+                            image={item.image}
+                        />
+                        <hr className={styles.solocardsDiv} />
+                    </>
                 )
             }
             </section>
