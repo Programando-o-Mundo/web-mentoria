@@ -12,19 +12,19 @@ export default function Profile(props: {
     return (
         <section className={styles.container}>
             <div className={styles.imageContainer}>
-                <Image src={props.image} width={200} height={200} alt={props.name}/>
+                <Image className={styles.image} src={props.image} width={200} height={200} alt={props.name}/>
             </div>
             <div className={styles.profileDescriptionContainer}>
-                <div className={styles.name}>
+                <div className={styles.item}>
                     <p>{props.name}</p>
                 </div>
-                <div className={styles.age}>
+                <div className={styles.item}>
                     <p>{props.age}</p>
                 </div>
-                <div className={styles.grade}>
+                <div className={styles.item}>
                     <p>{props.grade}</p>
                 </div>
-                <div className={styles.course}>
+                <div className={styles.item}>
                     <p>{props.course}</p>
                 </div>
             </div>

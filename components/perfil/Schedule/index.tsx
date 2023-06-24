@@ -29,7 +29,7 @@ export default function Schedule() {
 
     return(
         <section className={styles.container}>
-            <div id='scheduleTable' className={`${styles.table} ${styles.hidden}`} 
+            <div className={`${styles.table} ${styles.hidden}`} 
                 onMouseEnter={(e) => e.currentTarget?.classList.remove(styles.hidden)}
                 onMouseLeave={(e) => e.currentTarget?.classList.add(styles.hidden)}
             >
@@ -56,10 +56,10 @@ export default function Schedule() {
                                         <TableData name='thu' value={row.thu} handleChange={handleChange}/>
                                         <TableData name='fri' value={row.fri} handleChange={handleChange}/>
                         
-                                        <td className={`${styles.tableButtonContainer} ${styles.remove}`}>
+                                        <td className={`${styles.buttonContainer} ${styles.remove}`}>
                                             <button 
                                                 type='button' 
-                                                className={styles.tableButton} 
+                                                className={styles.button} 
                                                 onClick={() => setRows(rows.filter((r) => r.id !== row.id))}
                                             >
                                                 <BiMinus className={styles.buttonIcon}/>
@@ -69,11 +69,11 @@ export default function Schedule() {
                                 );
                             })
                         }
-                        <tr className={`${styles.tableButtonContainer} ${styles.add}`}>
+                        <tr className={`${styles.buttonContainer} ${styles.add}`}>
                             <td>
                                 <button
                                     type='button'
-                                    className={styles.tableButton}
+                                    className={styles.button}
                                     onClick={() => {
                                         id.current++;
                                         setRows([...rows, {id: id.current, mon: '', tue: '', wed: '', thu: '', fri: ''}])

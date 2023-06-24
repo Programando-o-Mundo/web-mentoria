@@ -1,14 +1,14 @@
-.container {
-    width: 100%;
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: stretch;
+    text-align: center;
+    margin: 0 1.5rem 1.5rem 0;
+    transition: all 200ms;
 }
 
-.table {
-    width: fit-content;
-    text-align: center;
-    margin: 0 auto;
-    border-collapse: collapse;
-    vertical-align: middle;
-    border-spacing: 0;
+.hidden.table {
+    margin: 0;
 }
 
 .table td,
@@ -16,23 +16,25 @@
     padding: 0.5rem 1rem;
 }
 
+.tableHead {
+    border-radius: 10px 10px 0 0;
+    background-color: white;
+}
+
 .tableBody,
 .tableBody tr {
     position: relative;
 }
 
-.tableHead {
-    width: 100%;
-    border-radius: 10px 10px 0 0;
-    background-color: white;
-}
-
 .tableBody {
-    width: 100%;
-    padding: 0 1rem 1rem 0;
     border-radius: 0 0 10px 10px;
     background-color: var(--dark-blue-shadow);
+    padding: 0 1rem 1rem 0;
     transition: all 200ms;
+}
+
+.hidden .tableBody {
+    padding: 0;
 }
 
 .tableBody tr input {
@@ -47,13 +49,32 @@
     cursor: pointer;
 }
 
-.tableButtonContainer.add,
-.tableButtonContainer.remove {
+
+.buttonContainer.add,
+.buttonContainer.remove {
     display: block;
     position: absolute;
     opacity: 1;
     pointer-events: auto;
     transition: all 200ms;
+    padding: 0;
+}
+
+.hidden .buttonContainer {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.button {
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 50%;
+    padding: 0.3rem;
+    cursor: pointer;
+    transition: all 200ms;
+    box-shadow: 0 0 4px var(--dark-blue);
 }
 
 .add {
@@ -69,28 +90,13 @@
     transition: all 200ms;
 }
 
-.table.hidden .remove {
+.hidden .remove {
     right: 0;
+    transform: translate(0%, -50%);
 }
 
-.table.hidden .tableBody {
-    padding: 0;
-}
-
-.table.hidden .tableButtonContainer {
-    opacity: 0;
-    pointer-events: none;
-}
-
-.tableButton {
-    background-color: white;
-    border: none;
-    outline: none;
-    border-radius: 50%;
-    padding: 0.3rem;
-    cursor: pointer;
-    transition: 0.3s;
-    box-shadow: 0 0 4px var(--dark-blue);
+.hidden .add {
+    transform: translate(-50%, 0%);
 }
 
 .buttonIcon {
