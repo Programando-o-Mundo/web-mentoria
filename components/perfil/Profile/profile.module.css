@@ -1,27 +1,37 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
     padding: 0.5rem;
-    margin-bottom: 1rem;
-    border: 1px solid var(--dark-blue);
-    background-color: var(--dark-blue);
+    background-color: var(--dark-blue-shadow);
     border-radius: 10px;
 }
 
+.imageDescriptionContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
 .imageContainer {
+    position: relative;
+    width: 200px;
+    height: 200px;
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid var(--dark-blue);
     box-shadow: 0px 10px 2px var(--dark-blue-header-shadow);
+    margin: 0 auto;
 }
 
 .image {
     display: block;
-    width: 150px;
-    height: 150px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 100%;
+    width: auto;
 }
 
 .profileDescriptionContainer {
@@ -29,10 +39,11 @@
     flex-direction: column;
     justify-content: left;
     padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: var(--light-blue);
+    box-shadow: 3px 3px 0px 3px var(--dark-blue-shadow);
     border-radius: 10px;
-    width: 100%;
-    gap: 10px;
+    text-align: center;
+    gap: 1.5rem;
 }
 
 .descriptionTitles {
@@ -40,19 +51,17 @@
     font-weight: bold;
 }
 
-.item {
-    
+.bioContainer {
+    padding-top: 1rem;
+}
+
+.bioContainer h3 {
+    line-height: 2em;
 }
 
 @media screen and (min-width: 460px) {
     .container {
-        flex-direction: row;
         padding: 1rem;
-    }
-
-    .profileDescriptionContainer {
-        width: 50%;
-        border-top: none;
     }
 }
 
@@ -60,5 +69,15 @@
     .image {
         width: 200px;
         height: 200px;
+    }
+
+    .profileDescriptionContainer {
+        text-align: left;
+    }
+
+    .imageDescriptionContainer {
+        grid-template-columns: 1fr 2fr;
+        justify-content: center;
+        align-items: center;
     }
 }

@@ -1,6 +1,7 @@
 import Profile from '@/components/perfil/Profile'
 import Schedule from '@/components/perfil/Schedule'
 import Skills from '@/components/perfil/Skills'
+import SocialMedia from '@/components/perfil/SocialMedias'
 
 import { faker } from '@faker-js/faker/locale/pt_BR'
 
@@ -28,16 +29,8 @@ export default function PerfilPage() {
                     <Schedule/>
                 </div>
     
-                <section className={styles.bio}>
-                    <h3>Bio</h3>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                        Earum corrupti non ea impedit eligendi laborum, unde quia
-                        doloribus quisquam pariatur incidunt, ducimus tempora sed,
-                        ab nulla iste optio rem! Ab iure amet pariatur, nam quasi,
-                        inventore error architecto magni, in corporis dolorem ea
-                        iste. Exercitationem aliquam vitae ab. Culpa, optio?
-                    </p>
+                <section className={styles.socialMedia}>
+                    <SocialMedia/>
                 </section>
             </div>
         </div>

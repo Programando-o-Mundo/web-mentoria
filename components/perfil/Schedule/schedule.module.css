@@ -13,7 +13,8 @@
 
 .table td,
 .table th {
-    padding: 0.5rem 1rem;
+    font-size: 0.875rem;
+    padding: 0.5rem;
 }
 
 .tableHead {
@@ -43,7 +44,8 @@
     outline: none;
     background-color: transparent;
     color: black;
-    font-size: 1rem;
+    font-size: 0.875rem;
+    color: var(--light-orange);
     font-weight: 500;
     text-align: center;
     cursor: pointer;
@@ -102,4 +104,16 @@
 .buttonIcon {
     display: block;
     font-size: 1.2rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .table td,
+    .table th {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+
+    .tableBody tr input {
+        font-size: 1rem;
+    }
 }
