@@ -1,0 +1,6 @@
+.schedule {
+    height: 100%;
+
+    overflow-x: auto;
+    padding: 1rem 0;
+}

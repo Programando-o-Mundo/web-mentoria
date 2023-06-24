@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import styles from './card.module.css'
+import { CSSProperties } from 'react';
 
 export default function Card(props: {
     link?: string, 
@@ -9,12 +10,15 @@ export default function Card(props: {
     color?: string | undefined, 
     className?: string | undefined,
     children?: React.ReactNode}) {
+
+    const sty: CSSProperties = {};
+
+    if(props.width) sty['width'] = props.width;
+    if(props.height) sty['height'] = props.height;
+    if(props.color) sty['backgroundColor'] = props.color;
+
     return (
-        <article className={`${styles.container} ${props.className}`} style={{
-            width: (props.width ? props.width : 'auto'),
-            height: (props.height ? props.height : 'auto'),
-            backgroundColor: (props.color ? props.color : 'white')
-        }}>
+        <article className={`${styles.container} ${props.className}`} style={sty}>
             {
                 function() {
                     if(!props.link) return props.children;
