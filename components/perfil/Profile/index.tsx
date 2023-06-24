@@ -16,15 +16,19 @@ export default function Profile(props: {
             </div>
             <div className={styles.profileDescriptionContainer}>
                 <div className={styles.item}>
+                    <h4 className={styles.descriptionTitles}>Nome:</h4>
                     <p>{props.name}</p>
                 </div>
                 <div className={styles.item}>
+                    <h4 className={styles.descriptionTitles}>Idade:</h4>
                     <p>{props.age}</p>
                 </div>
                 <div className={styles.item}>
+                    <h4 className={styles.descriptionTitles}>Período:</h4>
                     <p>{props.grade}</p>
                 </div>
                 <div className={styles.item}>
+                    <h4 className={styles.descriptionTitles}>Curso:</h4>
                     <p>{props.course}</p>
                 </div>
             </div>
