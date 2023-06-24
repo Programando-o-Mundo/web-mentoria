@@ -1,6 +1,26 @@
+/* PAGE CONTAINER */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* PROFILE */
+
+.profile {
+    margin-bottom: 1rem;
+}
+
+/* CONTENT */
+
+.contentContainer > div {
+    margin-bottom: 1rem;
+}
+
+/* SCHEDULE */
+
 .schedule {
     height: 100%;
-
     overflow-x: auto;
-    padding: 1rem 0;
+    padding-bottom: 0.5rem;
+    margin: 0 auto;
 }
