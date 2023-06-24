@@ -2,7 +2,30 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
-First, run the development server:
+### Developers Instalation
+
+Once you have clonned the project you will need to install the following dependencies:
+
+- eslint: ^8.41.0;
+- eslint-config-next: ^13.4.4;
+- next: ^13.4.4;
+- react: ^18.2.0;
+- react-dom: ^18.2.0;
+- react-icons: ^4.8.0;
+- typescript: ^5.0.4.
+
+You can intall using one of the following commands:
+
+```bash
+npm install next@latest react@latest react-dom@latest react-icons@latest eslint@latest eslint-config-next@latest
+# or
+yarn add next@latest react@latest react-dom@latest react-icons@latest eslint@latest eslint-config-next@latest
+# or
+pnpm add next@latest react@latest react-dom@latest react-icons@latest eslint@latest eslint-config-next@latest
+
+```
+
+To run the development server use:
 
 ```bash
 npm run dev

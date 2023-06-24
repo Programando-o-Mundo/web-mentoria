@@ -1,0 +1,174 @@
+/* HEADER CONTAINER */
+
+.headerContainer {
+    background-color: var(--dark-blue);
+    padding: 1rem;
+    z-index: 1000;
+}
+
+.headerTitleContainer {
+    position: relative;
+}
+
+.headerOpened .headerTitleContainer {
+    position: static;
+}
+
+.headerTitleLink {
+    display: block;
+    width: fit-content;
+}
+
+.headerTitle {
+    width: fit-content;
+}
+
+.headerDetails {
+    background-color: var(--dark-blue-header-shadow);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    width: 100%;
+    height: 100%;   
+    top: 0;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: all 300ms;
+    pointer-events: none;
+}
+
+.headerOpened .headerDetails {
+    pointer-events: auto;
+    right: 0;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navigationLink {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--dark-gray);
+    padding-bottom: 3px;
+    gap: 0.5rem;
+}
+
+.navigationLink::after {
+    content: '';
+    border-radius: 10px;
+    border: 1px solid var(--light-orange);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.navigationLinkTitle {
+    font-weight: 400;
+    transition: color 100ms;
+}
+
+.navigationLinkIcon {
+    display: block;
+    font-size: 1.3rem;
+    transition: color 100ms;
+}
+
+.navigationLink:hover .navigationLinkIcon,
+.navigationLink:hover .navigationLinkTitle {
+    color: var(--light-orange);
+}
+
+/* USER */
+
+.userCardLink { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    cursor: pointer;
+}
+
+.userImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: aqua;
+    width: 70px;
+    height: 70px;
+}
+
+.userImage {
+    height: 100%;
+    width: auto;
+}
+
+.userName {
+    padding-top: 0.5rem;
+    position: relative; 
+}
+
+.userName::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 0;
+    border: 1px solid var(--light-orange);
+}
+
+/* MEDIA */
+
+@media screen and (min-width: 768px) {
+    .headerTitleContainer {
+        position: static;
+    }
+
+    .headerDetails {
+        position: static;
+        background-color: transparent;
+        backdrop-filter: none;
+        pointer-events: auto;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding-right: 1rem;
+    }
+
+    .headerContent {
+        display: flex;
+        align-items: center;
+    }
+
+    .navigation {
+        flex-direction: row;
+    }
+
+    .userCardLink {
+        display: block;
+    }
+
+    .userImageContainer {
+        width: 55px;
+        height: 55px;
+    }
+
+    .userName {
+        display: none;
+    }
+
+}

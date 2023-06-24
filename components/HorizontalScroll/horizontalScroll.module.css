@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    justify-content: stretch;
+    align-items: center;
+    padding: 1rem 0.5rem;
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.horizontalScroll {
+    overflow-x: auto;
+    display: grid;
+    grid-auto-flow: column;
+    align-items: center;
+    gap: 0.5rem;
+    scroll-behavior: auto;
+}
+
+.horizontalScroll::-webkit-scrollbar {
+    display: none;
+}
+
+.arrowButton {
+    display: none;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.arrow {
+    display: block;
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+
+    .horizontalScroll {
+        gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    .arrow {
+        font-size: 2.5rem;
+    }
+
+    .arrowButton {
+        display: block;
+        padding: 0.5rem;
+    }
+}

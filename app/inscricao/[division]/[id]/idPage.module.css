@@ -1,0 +1,118 @@
+.container {
+    height: 100%;
+    --idH3Title: 1.3rem;
+}
+
+.leftContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    border: 7px solid var(--dark-blue-shadow);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px var(--dark-blue-shadow);
+}
+
+.mentorsContainer {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--dark-blue-shadow);
+    padding: 1rem;
+}
+
+.mentorsContainer::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    height: 80%;
+    width: 0;
+    transform: translate(-50%, -50%);
+    border: 1px solid var(--light-orange);
+    border-radius: 10px;
+}
+
+.groupTreeContainer {
+    height: 100%;
+    grid-template-rows: auto 1fr;
+    display: grid;
+    align-items: center;
+}
+
+.groupTreeContainer h3 {
+    text-align: center;
+    font-size: var(--idH3Title);
+    padding: 1rem;
+}
+
+.treeContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem
+}
+
+.rightContainer {
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: stretch;
+    align-items: center;
+    gap: 2rem;
+}
+
+.horizontalScrollContainer h3 {
+    text-align: center;
+    font-size: var(--idH3Title);
+    padding: 1rem;
+}
+
+.reportCard {
+    width: 150px;
+    height: 200px;
+    padding: 0.5rem;
+    text-align: center;
+    box-shadow: 5px 5px 0px 0px var(--dark-blue-shadow);
+}
+
+.reportCard a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+}
+
+.reportTitle span {
+    display: block;
+    line-height: 1em;
+}
+
+.reportDate {
+    font-size: 0.725rem;
+    font-style: italic;
+}
+
+.reportDescription {
+    font-size: 0.825rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .reportCard {
+        width: 175px;
+        height: 225px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: stretch;
+        align-items: stretch;
+        gap: 2rem;
+    }    
+}

@@ -1,0 +1,24 @@
+.buttonSubscribe {
+    border-radius: 5px;
+    background-color: var(--dark-blue-shadow);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    box-shadow: 0px 0px 5px 0px var(--dark-gray-shadow);
+    transition: all 200ms;   
+}
+
+.buttonSubscribe:hover {
+    background-color: var(--light-blue);
+}
+
+.icon {
+    display: block;
+    color: var(--light-orange);
+    font-size: 1.5rem;
+}

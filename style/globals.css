@@ -1,0 +1,78 @@
+:root {
+
+    /* COR PALETTE */
+
+    --light-blue: rgb(123, 158, 166);
+    --dark-blue: rgb(2, 81, 89);
+    --light-gray: rgb(60, 75, 77);
+    --dark-gray: rgb(1, 35, 38);
+    --green-blue: rgb(2, 89, 89);
+    --light-orange: rgb(242, 219, 206);
+
+    --white-shadow: rgba(255, 255, 255, 0.25); 
+    --light-blue-shadow: rgba(123, 158, 166, 0.3);
+    --dark-blue-shadow: rgba(2, 81, 89, 0.3);
+    --dark-gray-shadow: rgba(1, 35, 38, 0.3);
+    --green-blue-shadow: rgba(2, 89, 89, 0.3);
+    --light-orange-shadow: rgba(242, 219, 206, 0.7);    
+
+    --dark-blue-header-shadow: rgba(2, 81, 89, 0.5);
+    --dark-gray-shadow-scrollbar: rgba(1, 35, 38, 0.7);
+    /* MEDIA SCREEN SIZE */
+
+    --xs: 460px;
+    --sm: 640px;
+    --md: 768px;
+    --lg: 1024px;
+    --xl: 1280px;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+body {
+    min-height: 100vh;
+    display: grid;
+}
+
+main {
+    background-color: var(--light-blue);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--light-gray);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--dark-gray);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--dark-gray-shadow-scrollbar);
+}
+
+@media (prefers-color-scheme: light) {
+    html {
+        color-scheme: light;
+    }
+}

@@ -1,0 +1,30 @@
+.container {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: var(--dark-blue-shadow);
+    padding: 0.5rem;
+}
+
+.mentoresContainer {
+    font-size: 1.1rem;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.mentoradoContainer {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.buttonContainer {
+    padding-block: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        padding: 1rem;
+    }
+}

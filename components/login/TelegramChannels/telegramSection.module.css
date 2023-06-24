@@ -1,0 +1,74 @@
+/* CONTAINER CONTAINER */
+
+.telegramSectionContainer {
+    pointer-events: auto;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-block: 1rem;
+    display: grid;
+    justify-content: stretch;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    transition: all 200ms;
+    overflow: auto;
+}
+
+.telegramSectionContainer.hidden {
+    pointer-events: none;
+    opacity: 0;
+}
+
+/* SECTION */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem; 
+}
+
+.channel {
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    padding: 1rem;
+    transition: all 100ms;
+}
+
+.channel:hover {
+    transform: scale(1.05);
+}
+
+.channelLink {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.channelIcon {
+    margin: 0 auto;
+}
+
+.channelIcon * {
+    display: block;
+    font-size: 2rem;
+}
+
+.channelContent {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    text-align: center;
+}
+
+.channelTitle {
+    font-size: 1rem;
+    text-align: center;
+}

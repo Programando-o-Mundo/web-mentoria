@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    display: block;
+    padding: 0.5rem;
+    border-radius: 10px;
+    background-color: var(--white-shadow);
+    width: fit-content;
+    transition: all 200ms;
+    border: none;
+    outline: none;
+}
+
+.card:hover {
+    background-color: var(--light-blue);
+}
+
+.icon { 
+    font-size: 2rem;
+    display: block;
+}

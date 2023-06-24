@@ -1,0 +1,13 @@
+.mainContainer {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    gap: 1rem;
+    width: 100%;
+}

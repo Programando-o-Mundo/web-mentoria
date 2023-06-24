@@ -1,0 +1,36 @@
+.cardContainer {
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: var(--dark-blue-shadow);
+    display: grid;
+    grid-template-rows: 1fr auto;
+    height: 100%;
+}
+
+.cardCampusName {
+    color: var(--light-gray);
+}
+
+.cardContentContainer {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.cardIcon {
+    color: var(--light-blue);
+    background-color: var(--dark-blue);
+    padding: 0.3rem;
+    font-size: 1.7rem;
+    border-radius: 5px;
+    transition: all 200ms;
+}
+
+.cardIcon:hover {
+    background-color: var(--green-blue);
+}
+
+.cardIcon > * {
+    display: block;
+}
