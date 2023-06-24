@@ -1,0 +1,45 @@
+.lastNewsSec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lastNews {
+    margin-top: 3rem;
+}
+
+.lastNewsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: xx-large;
+}
+
+
+.solocardsDiv {
+    border: 1px 0 0 0;
+    border-color: black;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.allNewsTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 1rem;
+    font-size: xx-large;
+}
+
+@media screen and (max-width: 768px) { 
+    .solocardsDiv {
+        display: none;
+    }
+}
