@@ -1,0 +1,89 @@
+.soloContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: top;
+    width: 100%;
+    margin-bottom: 1rem;
+    /* border: 1px solid black;
+    background-color: var(--green-blue); */
+    border-radius: 15px;
+    overflow: hidden;
+    max-width: 1000px;
+}
+
+.soloInformationContainerOutsite {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: top;
+    height: 100%;
+}
+
+.soloInformationContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 1rem;
+}
+
+.soloInformationContainer h3 {
+    border-bottom: 1px solid black;
+}
+
+.soloLink {
+    margin-bottom: 1rem;
+}
+
+.soloLink:hover {
+    cursor: pointer;
+    color: gray;
+}
+
+.soloCardImg {
+    width: 100%;
+    max-width: 300px;
+}
+
+.soloImage {
+    position: relative;
+    height: 100%;
+}
+
+.soloImage img {
+    border-radius: 15px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.soloDate {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+@media screen and (max-width: 768px) {
+    .soloContainer {
+        padding-top: 15px;
+        flex-direction: column-reverse;
+        align-items: center;
+        border: 1px solid black;
+    }
+
+    .soloImage {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .soloImage img {
+        position: static;
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+}
